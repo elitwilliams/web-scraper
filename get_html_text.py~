@@ -1,0 +1,6 @@
+import mechanize
+
+def get_html_text():
+    br = mechanize.Browser()
+    htmltext = br.open('http://www.nytimes.com/2014/05/13/world/europe/ukraine.html?hp').read()
+    print htmltext

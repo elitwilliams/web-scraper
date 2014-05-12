@@ -1,0 +1,6 @@
+from bs4 import BeautifulSoup
+
+def get_article_text(webtext):
+    soup = BeautifulSoup(webtext)
+    for tag in soup.findAll('p'):
+        print tag
