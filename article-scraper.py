@@ -1,5 +1,8 @@
 import article_text
+import get_html_text
 
-url = 'http://www.nytimes.com/2014/05/13/world/europe/ukraine.html?hp'
+url = 'http://nyglass.com'
 
-print article_text.get_article(url)
+article = article_text.get_article(url)
+
+print article_text.get_keywords(get_html_text.get_html_text(url))
